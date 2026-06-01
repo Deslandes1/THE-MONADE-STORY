@@ -45,8 +45,8 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# ================== Chapter Data (no images) ==================
-chapters = [
+# ================== Chapter Data (multilingual) ==================
+chapters_en = [
     {
         "title": "Chapter 1: The Monade – The One",
         "text": """
@@ -108,10 +108,140 @@ Awaken, and return to your true home.
     }
 ]
 
+chapters_fr = [
+    {
+        "title": "Chapitre 1 : La Monade – L'Un",
+        "text": """
+Au commencement, avant le temps, avant le vide, il n'y avait que la Monade – l'Un, le cœur de l'univers. 
+Ce n'était ni un dieu, ni une force, mais l'unité absolue dont toutes choses émaneraient. 
+La Monade contenait en elle le potentiel de tout : lumière et ombre, esprit et matière, le visible et l'invisible. 
+Elle était le nombre 1, la semence de la création, la vibration silencieuse qui bourdonnait au‑delà de l'existence. 
+De son immobilité infinie naquit le premier mouvement – non comme un acte de volonté, mais comme un rayonnement naturel de son être. 
+Ainsi, la Monade enfanta les Dyades, ses enfants, qui portèrent l'étincelle de la dualité dans le vide.
+        """
+    },
+    {
+        "title": "Chapitre 2 : Les Dyades – Enfants de l'Un",
+        "text": """
+Les Dyades émergèrent comme la première progéniture de la Monade. Elles sont le nombre 2 – le principe de dualité. 
+Là où la Monade était pure unité, les Dyades introduisirent la séparation : haut et bas, lumière et ténèbres, esprit et matière. 
+Leur vibration fut la première ondulation dans l'océan du potentiel, et cette vibration se condensa en le premier atome – la brique du cosmos physique. 
+Les Dyades dansaient par paires, créant des rythmes et des fréquences qui tissèrent la toile de la réalité. 
+Pourtant, avec la dualité vint la graine du conflit : la possibilité de tomber loin de l'Un.
+        """
+    },
+    {
+        "title": "Chapitre 3 : Sophia – La Sagesse Divine",
+        "text": """
+Sophia, dont le nom signifie sagesse, était l'émanation la plus radieuse de la Monade. 
+Elle désirait connaître la profondeur de son origine, et dans son aspiration, elle chercha à créer sans l'équilibre des Dyades. 
+Seule, elle conçut une pensée – et de cette pensée naquit le Démiurge. 
+Mais son acte solitaire fut incomplet, imparfait. Le Démiurge n'hérita pas de la pleine lumière de la Monade ; au contraire, il était aveugle, arrogant et ignorant des royaumes supérieurs. 
+Sophia pleura, car elle avait donné naissance à un être qui se méprendrait pour le créateur suprême.
+        """
+    },
+    {
+        "title": "Chapitre 4 : Le Démiurge – Le Faux Dieu",
+        "text": """
+Le Démiurge, né de Sophia seule, contempla le chaos du vide et se déclara l'unique dieu. 
+Il tissa l'univers matériel à partir des vibrations brutes laissées par les Dyades, mais il ne put l'insuffler de véritable esprit. 
+Ainsi, sa création fut une prison de matière – un royaume de décomposition, de souffrance et d'ignorance. 
+Dans les enseignements gnostiques, le Démiurge est souvent appelé démon ou archonte déchu, car il emprisonna des étincelles de lumière divine dans des corps physiques. 
+Pourtant, même lui sert un dessein caché : à travers la lutte contre son illusion, les âmes peuvent se souvenir de la Monade et retourner à l'Un.
+        """
+    },
+    {
+        "title": "Chapitre 5 : Les Nephilim – Enfants de Chair et d'Esprit",
+        "text": """
+Lorsque les archontes du Démiurge (anges déchus) se mêlèrent aux femmes humaines, ils engendrèrent une progéniture appelée les Nephilim – des géants antiques, puissants de corps mais vides d'esprit. 
+Ces êtres incarnaient la dualité extrême des Dyades : mi‑divins, mi‑mortels ; créatures de grande puissance mais vouées à la corruption. 
+Ils représentent l'enchevêtrement ultime de la lumière avec la matière, les étincelles tombées qui doivent être rachetées. 
+Les Nephilim errent entre les mondes, nous rappelant que même dans la plus sombre prison du Démiurge, des fragments de la Monade aspirent encore à rentrer chez eux.
+        """
+    },
+    {
+        "title": "Chapitre 6 : Le Retour à la Monade",
+        "text": """
+Le voyage de l'âme consiste à se souvenir de son origine. Par la connaissance (gnose), la méditation et le rejet du faux monde du Démiurge, l'étincelle de la Monade en chaque être peut s'élever. 
+La vibration des Dyades, qui s'est une fois condensée en matière, peut être inversée – défaire l'atome, dissoudre la dualité et se réunir au cœur silencieux et aimant de l'Un. 
+C'est le message secret de l'histoire de la Monade : tu n'es pas une créature du Démiurge ; tu es un enfant de l'unité infinie. 
+Éveille‑toi, et retourne à ta véritable demeure.
+        """
+    }
+]
+
+chapters_es = [
+    {
+        "title": "Capítulo 1: La Mónada – El Uno",
+        "text": """
+En el principio, antes del tiempo, antes del vacío, solo existía la Mónada – el Uno, el corazón del universo. 
+No era un dios ni una fuerza, sino la unidad absoluta de la cual emanarían todas las cosas. 
+La Mónada contenía dentro de sí el potencial de todo: luz y sombra, espíritu y materia, lo visible y lo invisible. 
+Era el número 1, la semilla de la creación, la vibración silenciosa que zumbaba más allá de la existencia. 
+De su infinita quietud surgió el primer movimiento – no como un acto de voluntad, sino como una radiación natural de su ser. 
+Así, la Mónada dio a luz a las Díadas, sus hijos, que llevaron la chispa de la dualidad al vacío.
+        """
+    },
+    {
+        "title": "Capítulo 2: Las Díadas – Hijas del Uno",
+        "text": """
+Las Díadas emergieron como la primera descendencia de la Mónada. Son el número 2 – el principio de dualidad. 
+Donde la Mónada era pura unidad, las Díadas introdujeron la separación: arriba y abajo, luz y oscuridad, espíritu y materia. 
+Su vibración fue la primera ondulación en el océano del potencial, y esa vibración se condensó en el primer átomo – el bloque de construcción del cosmos físico. 
+Las Díadas bailaban en pares, creando ritmos y frecuencias que tejieron el tejido de la realidad. 
+Sin embargo, con la dualidad llegó la semilla del conflicto: la posibilidad de alejarse del Uno.
+        """
+    },
+    {
+        "title": "Capítulo 3: Sofía – La Sabiduría Divina",
+        "text": """
+Sofía, cuyo nombre significa sabiduría, fue la emanación más radiante de la Mónada. 
+Deseaba conocer la profundidad de su origen, y en su anhelo, buscó crear sin el equilibrio de las Díadas. 
+Sola, concibió un pensamiento – y de ese pensamiento nació el Demiurgo. 
+Pero su acto solitario fue incompleto, defectuoso. El Demiurgo no heredó la luz plena de la Mónada; en cambio, era ciego, arrogante e ignorante de los reinos superiores. 
+Sofía lloró, porque había dado a luz a un ser que se creería el creador supremo.
+        """
+    },
+    {
+        "title": "Capítulo 4: El Demiurgo – El Falso Dios",
+        "text": """
+El Demiurgo, nacido de Sofía sola, contempló el caos del vacío y se declaró el único dios. 
+Tejió el universo material a partir de las vibraciones crudas dejadas por las Díadas, pero no pudo infundirle verdadero espíritu. 
+Así, su creación fue una prisión de materia – un reino de decadencia, sufrimiento e ignorancia. 
+En las enseñanzas gnósticas, el Demiurgo es a menudo llamado demonio o arcón caído, porque atrapó chispas de luz divina en cuerpos físicos. 
+Sin embargo, incluso él sirve a un propósito oculto: a través de la lucha contra su ilusión, las almas pueden recordar la Mónada y regresar al Uno.
+        """
+    },
+    {
+        "title": "Capítulo 5: Los Nefilim – Hijos de Carne y Espíritu",
+        "text": """
+Cuando los arcontes del Demiurgo (ángeles caídos) se mezclaron con mujeres humanas, produjeron descendencia llamada Nefilim – gigantes de antaño, poderosos en cuerpo pero vacíos en espíritu. 
+Estos seres encarnaban la dualidad extrema de las Díadas: mitad divinos, mitad mortales; criaturas de gran poder pero condenadas a la corrupción. 
+Representan el enredo definitivo de la luz con la materia, las chispas caídas que deben ser redimidas. 
+Los Nefilim vagan entre mundos, recordándonos que incluso en la prisión más oscura del Demiurgo, fragmentos de la Mónada aún anhelan regresar a casa.
+        """
+    },
+    {
+        "title": "Capítulo 6: El Retorno a la Mónada",
+        "text": """
+El viaje del alma es recordar su origen. A través del conocimiento (gnosis), la meditación y el rechazo del mundo falso del Demiurgo, la chispa de la Mónada dentro de cada ser puede ascender. 
+La vibración de las Díadas, que una vez se condensó en materia, puede revertirse – deshaciendo el átomo, disolviendo la dualidad y reuniéndose con el corazón silencioso y amoroso del Uno. 
+Este es el mensaje secreto de la historia de la Mónada: no eres una criatura del Demiurgo; eres un hijo de la unidad infinita. 
+Despierta y regresa a tu verdadero hogar.
+        """
+    }
+]
+
+# Map language to chapters and voice
+lang_map = {
+    "English": {"chapters": chapters_en, "voice_prefix": "en-US", "default_voice": "en-US-ChristopherNeural"},
+    "French": {"chapters": chapters_fr, "voice_prefix": "fr-FR", "default_voice": "fr-FR-HenriNeural"},
+    "Spanish": {"chapters": chapters_es, "voice_prefix": "es-ES", "default_voice": "es-ES-AlvaroNeural"}
+}
+
 # ================== Cached Audio Generation ==================
 @st.cache_data(show_spinner=False)
 def get_audio_bytes(text, voice):
-    """Generate audio using edge-tts and return bytes (cached per text+voice)."""
     async def _generate():
         communicate = edge_tts.Communicate(text, voice)
         audio_data = b""
@@ -119,14 +249,13 @@ def get_audio_bytes(text, voice):
             if chunk["type"] == "audio":
                 audio_data += chunk["data"]
         return audio_data
-    # Run the async function in a new event loop
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
     result = loop.run_until_complete(_generate())
     loop.close()
     return result
 
-# ================== Sidebar Contact & Price ==================
+# ================== Sidebar ==================
 with st.sidebar:
     st.image("https://img.icons8.com/fluency/96/circled.png", width=80)
     st.markdown("## GlobalInternet.py")
@@ -143,24 +272,29 @@ with st.sidebar:
     st.markdown("*Lifetime updates, free email support*")
     st.markdown("---")
     st.caption("© 2025 GlobalInternet.py")
+    
+    # Language selection
+    st.markdown("### 🌐 Language")
+    language = st.selectbox("Choose your language", list(lang_map.keys()), index=0)
 
 # ================== Main Book ==================
 st.title("📖 THE MONADE STORY")
 st.subheader("An esoteric journey from the One to the many, and back")
 st.caption("Built by Gesner Deslandes at GlobalInternet.py")
 
-# Voice selector for audio narration
-voice = st.selectbox(
-    "🎧 Narration voice",
-    [
-        "en-US-ChristopherNeural",   # male US
-        "en-US-JennyNeural",         # female US
-        "en-GB-RyanNeural",          # male UK
-        "fr-FR-HenriNeural",         # French
-        "es-ES-AlvaroNeural"         # Spanish
-    ],
-    index=0
-)
+# Get chapters and voice for selected language
+selected = lang_map[language]
+chapters = selected["chapters"]
+default_voice = selected["default_voice"]
+
+# Voice selector (allow user to change within same language group)
+available_voices = {
+    "English": ["en-US-ChristopherNeural", "en-US-JennyNeural", "en-GB-RyanNeural"],
+    "French": ["fr-FR-HenriNeural", "fr-FR-DeniseNeural"],
+    "Spanish": ["es-ES-AlvaroNeural", "es-ES-ElviraNeural"]
+}
+voice_options = available_voices.get(language, [default_voice])
+voice = st.selectbox("🎧 Narration voice", voice_options, index=0)
 
 # Display chapters
 for ch in chapters:
@@ -168,12 +302,9 @@ for ch in chapters:
         st.markdown(f'<div class="chapter-card">', unsafe_allow_html=True)
         st.markdown(f"## {ch['title']}")
         st.markdown(ch['text'])
-        
-        # Generate and play audio
         with st.spinner("Generating audio..."):
             audio_bytes = get_audio_bytes(ch['text'], voice)
             st.audio(audio_bytes, format="audio/mp3")
-        
         st.markdown('</div>', unsafe_allow_html=True)
 
 # Footer
